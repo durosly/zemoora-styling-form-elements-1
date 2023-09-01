@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Styling forms and form elements</title>
+		<link
+			rel="stylesheet"
+			href="assets/css/main.css"
+		/>
+	</head>
+	<body>
+		<h1>Forms and form elements</h1>
+		<form action="">
+			<div class="form-control">
+				<label
+					class="label"
+					for="username"
+					>Username</label
+				>
+				<input
+					type="text"
+					name="username"
+					id="username"
+					class="input"
+					placeholder="john123..."
+					required
+				/>
+			</div>
+			<div class="form-control">
+				<label
+					class="label"
+					for="email"
+					>Email</label
+				>
+				<input
+					type="email"
+					name="email"
+					id="email"
+					class="input"
+					required
+				/>
+			</div>
+			<div class="form-control">
+				<label for="male">Male</label>
+				<input
+					type="radio"
+					name="gender"
+					id="male"
+					class="radio"
+				/>
+				<label for="female">Female</label>
+				<input
+					type="radio"
+					name="gender"
+					id="female"
+				/>
+			</div>
+			<div class="form-control">
+				<label
+					class="label"
+					for="country"
+					>Country</label
+				>
+				<select
+					name="country"
+					id="country"
+					class="input"
+				>
+					<option
+						disabled
+						selected
+					>
+						-- select country --
+					</option>
+					<option>Nigeria</option>
+					<option>United States</option>
+					<option>Canada</option>
+				</select>
+			</div>
+			<div class="form-control">
+				<label
+					class="label"
+					for="bio"
+					>Bio</label
+				>
+				<textarea
+					name="bio"
+					id="bio"
+				></textarea>
+			</div>
+			<div class="form-control">
+				<label
+					for="file"
+					class="label"
+					>Profile Image</label
+				>
+				<input
+					type="file"
+					name="file"
+					id="file"
+					class="input"
+				/>
+			</div>
+			<button type="button">Submit</button>
+		</form>
+	</body>
+</html>
